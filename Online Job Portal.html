@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)http://localhost:8082/ojp/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>Online Job Portal</title>
+  <link rel="stylesheet" href="./Online Job Portal_files/style.css">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="./Online Job Portal_files/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+  <!-- Top Navigation -->
+  <header class="top-nav">
+    <div class="logo">ONLINE JOB PORTAL</div>
+    <nav>
+      <a href="http://localhost:8082/ojp/index.html#">Home</a>
+      <a href="http://localhost:8082/ojp/jobListing.html">Job Listings</a>
+      <a href="http://localhost:8082/ojp/about.html">About Us</a>
+      <a href="http://localhost:8082/ojp/contact.html">Contact Us</a>
+      <a href="http://localhost:8082/ojp/services.html">Services</a>
+      <a href="http://localhost:8082/ojp/login.html" class="btn">Login</a>
+    </nav>
+  </header>
+
+  <!-- Display Login Success Message -->
+  <div id="login-success-message" style="display:none; background-color: #4CAF50; color: white; text-align: center; padding: 10px;">
+    Login Successful!
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="overlay">
+      <div class="hero-content">
+        <h1>A Powerful Career Website Template</h1>
+        <p>Find your dream jobs in our powerful career website template.</p>
+        <form class="search-form">
+          <input type="text" placeholder="Job title, keywords...">
+          <input type="text" placeholder="Anywhere">
+          <select>
+            <option>Part Time</option>
+            <option>Full Time</option>
+            <option>Internship</option>
+          </select>
+          <button type="submit">Search Job</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Statistics Section -->
+  <section class="statistics">
+    <h2>Careers Statistics</h2>
+    <p>We empower thousands of professionals to find the right job every day. Here's what we’ve achieved so far:</p>
+    <div class="stats-grid">
+      <div class="stat-item">
+        <h3>2+</h3>
+        <p>Jobs Posted</p>
+      </div>
+      <div class="stat-item">
+        <h3>00+</h3>
+        <p>Companies Registered</p>
+      </div>
+      <div class="stat-item">
+        <h3>5+</h3>
+        <p>Active Job Seekers</p>
+      </div>
+      <div class="stat-item">
+        <h3>100%</h3>
+        <p>User Satisfaction Rate</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="section-p1">
+    <div class="col">
+      <h4>Contact</h4>
+      <p><strong>Address:</strong> S R Nagar , Hyderabad 500038</p>
+      <p><strong>Phone:</strong> +91 6202275569</p>
+      <p><strong>Hours:</strong> 10:00AM - 6:00PM</p>
+      <div class="follow">
+        <h4>Follow Us</h4>
+        <div class="icon">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-x-twitter"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-pinterest"></i>
+          <i class="fab fa-youtube"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <h4>About</h4>
+      <a href="http://localhost:8082/ojp/index.html#">About Us</a>
+      <a href="http://localhost:8082/ojp/index.html#">Delivery Information</a>
+      <a href="http://localhost:8082/ojp/index.html#">Privacy Policy</a>
+      <a href="http://localhost:8082/ojp/index.html#">Terms &amp; Conditions</a>
+      <a href="http://localhost:8082/ojp/index.html#">Contact Us</a>
+    </div>
+
+    <div class="col">
+      <h4>My Account</h4>
+      <a href="http://localhost:8082/ojp/index.html#">Sign In</a>
+      <a href="http://localhost:8082/ojp/index.html#">About Us</a>
+      <a href="http://localhost:8082/ojp/index.html#">Contact Us</a>
+      <a href="http://localhost:8082/ojp/index.html#">Services</a>
+      <a href="http://localhost:8082/ojp/index.html#">Help</a>
+    </div>
+
+    <div class="col install">
+      <h4>Install App</h4>
+      <p>From App Store or Google Play</p>
+      <div class="row">
+        <img src="./Online Job Portal_files/google-play-6647242_1280.png" alt="Play Store">
+      </div>
+      <p>Secured Payment Gateways</p>
+      <img src="./Online Job Portal_files/pay.png" alt="Payment Gateways">
+    </div>
+
+    <div class="copyright">
+      <p>© 2024, Ashish Ranjan And Yenti Vineetha - All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Check if the login success parameter is present in the URL
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.has('loginSuccess') && urlParams.get('loginSuccess') === 'true') {
+      document.getElementById('login-success-message').style.display = 'block';
+    }
+  </script>
+
+
+
+</body></html>
